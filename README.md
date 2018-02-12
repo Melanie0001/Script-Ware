@@ -6,6 +6,9 @@ if you update proto struct and addresses, you're able to call closures because o
 This has practically everything the old source had, i've commented upon the code of which i have used from other people (not much)
 but remember! This is **roblox exploiting!** you're not permitted to use a SINGLE piece of code from someone else without a moron screaming that you're incapable
 
+# How does it actually work?
+Script-Ware uses a very reputable and widely used method of execution named "Proto Conversion" this method was founded by Brandon (chirality) in mid-ish 2015. When Roblox runs a script, the client (you basically) recieves the bytecode of every script on the game from the server, Roblox then will deserialize the bytecode, this "deserialize" means that the bytecode will be decompressed and converted into a **proto struct**, a proto struct is essientally a struct of information of the lclosure. In order to therefore run scripts, we can create a vanilla lua proto and convert it to roblox's proto format and then feed it to the lua vm which will run it
+
 # Reference to the old source being leaked
 "leaking it because he's only made 10% of it"
 ahem... that was very rude. script-ware was made by me and quad core, idk where you got _that_ from.
